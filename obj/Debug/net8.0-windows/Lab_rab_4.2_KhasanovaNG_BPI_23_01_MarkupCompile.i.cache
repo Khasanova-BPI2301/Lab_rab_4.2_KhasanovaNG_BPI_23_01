@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\Нургиза\source\repos\Lab_rab_4.2_KhasanovaNG_BPI_23_01\Lab_rab_4.2_KhasanovaNG_BPI_23_01\App.xaml
-31012183261
+4893391614
 
-15-92685692
+16-215479114
 198-1127337667
-MainWindow.xaml;View\WindowEmployee.xaml;View\WindowRole.xaml;
+MainWindow.xaml;View\WindowEmployee.xaml;View\WindowNewRole.xaml;View\WindowRole.xaml;
 
-True
+False
 
