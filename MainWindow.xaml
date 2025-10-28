@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab_rab_4._2_KhasanovaNG_BPI_23_01"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+               Title="MainWindow" Height="350" Width="525">
     <Grid>
-
+        <Menu>
+            <MenuItem x:Name="Employee" Header="Сотрудники" Click="Employee_OnClick"/>
+            <MenuItem x:Name="Role" Header="Должности" Click="Role_OnClick"/>
+        </Menu>
     </Grid>
 </Window>

@@ -1,5 +1,5 @@
 ﻿Lab_rab_4.2_KhasanovaNG_BPI_23_01
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 C:\Users\Нургиза\source\repos\Lab_rab_4.2_KhasanovaNG_BPI_23_01\Lab_rab_4.2_KhasanovaNG_BPI_23_01\App.xaml
 31012183261
 
-15-92685692
+131867100383
 198-1127337667
 MainWindow.xaml;View\WindowEmployee.xaml;View\WindowRole.xaml;
 
-True
+False
 
