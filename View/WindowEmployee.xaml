@@ -8,7 +8,7 @@
                    Title="Сотрудники" Height="400" Width="550">
     <StackPanel>
         <ListView ItemsSource="{Binding ListPersonDPO}"
-                  SelectedItem="{Binding SelectedPersonDPO}"
+                  SelectedItem="{Binding SelectedPersonDpo}"
                   Height="250">
             <ListView.View>
                 <GridView>
