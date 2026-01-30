@@ -5,20 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab_rab_4._2_KhasanovaNG_BPI_23_01.View"
         mc:Ignorable="d"
-                Title="Сотрудники" Height="300" Width="500">
+                   Title="Сотрудники" Height="400" Width="550">
     <StackPanel>
-        <ListView x:Name="lvEmployee">
+        <ListView ItemsSource="{Binding ListPersonDPO}"
+                  SelectedItem="{Binding SelectedPersonDPO}"
+                  Height="250">
             <ListView.View>
                 <GridView>
-                    <GridView.Columns>
-                        <GridViewColumn Header="Код" Width="50" DisplayMemberBinding="{Binding Id}"/>
-                        <GridViewColumn Header="Фамилия" DisplayMemberBinding="{Binding LastName}"/>
-                        <GridViewColumn Header="Имя" DisplayMemberBinding="{Binding FirstName}"/>
-                        <GridViewColumn Header="Должность" Width="100" DisplayMemberBinding="{Binding Role}"/>
-                        <GridViewColumn Header="Дата рождения" DisplayMemberBinding="{Binding Birthday, StringFormat={}{0:dd\.}{0:MM\.}{0:yyyy}}"/>
-                    </GridView.Columns>
+                    <GridViewColumn Header="Код" Width="50" DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="Фамилия" DisplayMemberBinding="{Binding LastName}"/>
+                    <GridViewColumn Header="Имя" DisplayMemberBinding="{Binding FirstName}"/>
+                    <GridViewColumn Header="Должность" DisplayMemberBinding="{Binding RoleName}"/>
+                    <GridViewColumn Header="Дата рождения" DisplayMemberBinding="{Binding Birthday, StringFormat=d}"/>
                 </GridView>
             </ListView.View>
         </ListView>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+            <Button Content="Добавить" Command="{Binding AddPerson}" Margin="5"/>
+            <Button Content="Редактировать" Command="{Binding EditPerson}" Margin="5"/>
+            <Button Content="Удалить" Command="{Binding DeletePerson}" Margin="5"/>
+        </StackPanel>
     </StackPanel>
 </Window>

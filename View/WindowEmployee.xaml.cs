@@ -26,33 +26,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.View
         public WindowEmployee()
         {
             InitializeComponent();
-            PersonViewModel vmPerson = new PersonViewModel();
-            RoleViewModel vmRole = new RoleViewModel();
-
-            List<Role> roles = new List<Role>();
-            foreach (Role r in vmRole.ListRole)
-            {
-                roles.Add(r);
-            }
-
-            ObservableCollection<PersonDpo> persons = new ObservableCollection<PersonDpo>();
-            FindRole finder;
-
-            foreach (var p in vmPerson.ListPerson)
-            {
-                finder = new FindRole(p.RoleId);
-                Role rol = roles.Find(new Predicate<Role>(finder.RolePredicate));
-                persons.Add(new PersonDpo
-                {
-                    Id = p.Id,
-                    RoleName = rol.NameRole,
-                    FirstName = p.FirstName,
-                    LastName = p.LastName,
-                    Birthday = p.Birthday
-                });
-            }
-
-            lvEmployee.ItemsSource = persons;
+            DataContext = new PersonViewModel(); // связь с ViewModel
         }
     }
 }

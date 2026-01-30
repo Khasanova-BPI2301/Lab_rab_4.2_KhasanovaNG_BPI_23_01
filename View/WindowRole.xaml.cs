@@ -23,8 +23,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.View
         public WindowRole()
         {
             InitializeComponent();
-            RoleViewModel vmRole = new RoleViewModel();
-            lvRole.ItemsSource = vmRole.ListRole;
+            DataContext = new RoleViewModel();
         }
     }
 }

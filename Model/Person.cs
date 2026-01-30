@@ -22,5 +22,27 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.Model
             this.LastName = lastName;
             this.Birthday = birthday;
         }
+
+        public Person CopyFromPersonDPO(PersonDpo dpo)
+        {
+            Id = dpo.Id;
+            FirstName = dpo.FirstName;
+            LastName = dpo.LastName;
+            Birthday = dpo.Birthday;
+
+            // Находим RoleId по RoleName
+            var vmRole = new ViewModel.RoleViewModel();
+            foreach (var r in vmRole.ListRole)
+            {
+                if (r.NameRole == dpo.RoleName)
+                {
+                    RoleId = r.Id;
+                    break;
+                }
+            }
+            return this;
+        }
     }
 }
+    
+
