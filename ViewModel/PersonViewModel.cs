@@ -30,7 +30,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
 
         public PersonViewModel()
         {
-            // Заполняем исходные данные (Person)
+            
             ListPerson.Add(new Person(1, 1, "Иван", "Иванов", new DateTime(1980, 2, 28)));
             ListPerson.Add(new Person(2, 2, "Петр", "Петров", new DateTime(1981, 3, 20)));
             ListPerson.Add(new Person(3, 3, "Виктор", "Викторов", new DateTime(1982, 4, 15)));

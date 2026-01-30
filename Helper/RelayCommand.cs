@@ -11,7 +11,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.Helper
     {
         private Action<object> execute;
         private Func<object, bool> canExecute;
-
+        
         public event EventHandler CanExecuteChanged
         {
             add { CommandManager.RequerySuggested += value; }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab_rab_4._2_KhasanovaNG_BPI_23_01.View"
         mc:Ignorable="d"
-                   Title="Сотрудники" Height="400" Width="550">
+                   Title="Сотрудники" Height="420" Width="550">
     <StackPanel>
         <ListView ItemsSource="{Binding ListPersonDPO}"
                   SelectedItem="{Binding SelectedPersonDpo}"
@@ -21,7 +21,7 @@
             </ListView.View>
         </ListView>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10"  DataContext="PersonViewModel">
             <Button Content="Добавить" Command="{Binding AddPerson}" Margin="5"/>
             <Button Content="Редактировать" Command="{Binding EditPerson}" Margin="5"/>
             <Button Content="Удалить" Command="{Binding DeletePerson}" Margin="5"/>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab_rab_4._2_KhasanovaNG_BPI_23_01.View"
         mc:Ignorable="d"
-         Title="Сотрудник" Height="300" Width="350">
+         Title="Сотрудник" Height="320" Width="350">
     <StackPanel Margin="10">
         <TextBlock Text="Фамилия:" Margin="0,0,0,5"/>
         <TextBox Text="{Binding LastName}" Height="25"/>

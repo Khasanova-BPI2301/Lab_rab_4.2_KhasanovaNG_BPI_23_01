@@ -26,7 +26,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.View
         public WindowEmployee()
         {
             InitializeComponent();
-            DataContext = new PersonViewModel(); // связь с ViewModel
+            DataContext = new PersonViewModel(); 
         }
     }
 }

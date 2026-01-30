@@ -8,27 +8,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Lab_rab_4._2_KhasanovaNG_BPI_23_01.Helper;
 using Lab_rab_4._2_KhasanovaNG_BPI_23_01.View;
+using Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel;
 
 namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
     {
-        public MainWindow()
+        public partial class MainWindow : Window
         {
-            InitializeComponent();
-        }
-        private void Employee_OnClick(object sender, RoutedEventArgs e)
-        {
-            new WindowEmployee().Show();
-        }
+            public MainWindow()
+            {
+                InitializeComponent();
+                DataContext = new MainViewModel();
+            }
 
-        private void Role_OnClick(object sender, RoutedEventArgs e)
-        {
-            new WindowRole().Show();
+
         }
     }
-}
