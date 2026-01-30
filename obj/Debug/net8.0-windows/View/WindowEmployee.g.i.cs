@@ -53,7 +53,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Lab_rab_4.2_KhasanovaNG_BPI_23_01;V1.0.0.0;component/view/windowemployee.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Lab_rab_4.2_KhasanovaNG_BPI_23_01;component/view/windowemployee.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\WindowEmployee.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

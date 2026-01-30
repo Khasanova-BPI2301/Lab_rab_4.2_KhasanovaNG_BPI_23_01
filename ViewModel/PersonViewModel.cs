@@ -121,14 +121,19 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
             if (result == MessageBoxResult.OK)
             {
                 ListPersonDPO.Remove(SelectedPersonDpo);
-                ListPerson.Remove(ListPerson.Find(p => p.Id == SelectedPersonDpo.Id));
+
+
+                var personToRemove = ListPerson.FirstOrDefault(p => p.Id == SelectedPersonDpo.Id);
+                if (personToRemove != null)
+                {
+                    ListPerson.Remove(personToRemove);
+                }
             }
         }, _ => SelectedPersonDpo != null);
         #endregion
-
         public event PropertyChangedEventHandler PropertyChanged;
 
-        [NotifyPropertyChangedInvocator]
+        
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

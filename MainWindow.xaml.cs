@@ -23,14 +23,12 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01
         }
         private void Employee_OnClick(object sender, RoutedEventArgs e)
         {
-            WindowEmployee wEmployee = new WindowEmployee();
-            wEmployee.Show();
+            new WindowEmployee().Show();
         }
 
         private void Role_OnClick(object sender, RoutedEventArgs e)
         {
-            WindowRole wRole = new WindowRole();
-            wRole.Show();
+            new WindowRole().Show();
         }
     }
 }
