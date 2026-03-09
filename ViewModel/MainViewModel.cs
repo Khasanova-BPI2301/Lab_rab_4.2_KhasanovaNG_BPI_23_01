@@ -22,7 +22,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
 
         private void OpenWindow(Window window)
         {
-            window.Show();
+            window.ShowDialog(); 
         }
     }
 }

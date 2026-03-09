@@ -21,7 +21,7 @@
             </ListView.View>
         </ListView>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10"  DataContext="PersonViewModel">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10"  >
             <Button Content="Добавить" Command="{Binding AddPerson}" Margin="5"/>
             <Button Content="Редактировать" Command="{Binding EditPerson}" Margin="5"/>
             <Button Content="Удалить" Command="{Binding DeletePerson}" Margin="5"/>

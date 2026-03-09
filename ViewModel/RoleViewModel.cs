@@ -19,7 +19,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
 {
     public class RoleViewModel : INotifyPropertyChanged
     {
-        private readonly string _roleDataPath = "DataModels/RoleData.json";
+        private readonly string _roleDataPath = @"C:\\Users\\Нургиза\\source\\repos\\Lab_rab_4.2_KhasanovaNG_BPI_23_01\\Lab_rab_4.2_KhasanovaNG_BPI_23_01\\DataModels\\RoleData.json";
         private string _jsonRoles = string.Empty;
         public string Error { get; set; }
 
@@ -67,7 +67,6 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
         private ObservableCollection<Role> InitializeDefaultRoles()
         {
             var roles = new ObservableCollection<Role>();
-            roles.Add(new Role { Id = 0, NameRole = "Не задано" });
             roles.Add(new Role { Id = 1, NameRole = "Директор" });
             roles.Add(new Role { Id = 2, NameRole = "Бухгалтер" });
             roles.Add(new Role { Id = 3, NameRole = "Менеджер" });

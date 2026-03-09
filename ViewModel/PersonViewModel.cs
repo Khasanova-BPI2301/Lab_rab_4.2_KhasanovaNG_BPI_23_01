@@ -17,7 +17,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
 {
     public class PersonViewModel : INotifyPropertyChanged
     {
-        private readonly string _personDataPath = "DataModels/PersonData.json";
+        readonly string _personDataPath = @"C:\\Users\\Нургиза\\source\\repos\\Lab_rab_4.2_KhasanovaNG_BPI_23_01\\Lab_rab_4.2_KhasanovaNG_BPI_23_01\\DataModels\\PersonData.json";
         private string _jsonPersons = string.Empty;
         public string Error { get; set; }
         private PersonDpo selectedPersonDPO;
@@ -37,6 +37,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
         {
             ListPerson = LoadPerson();
             ListPersonDPO = GetListPersonDpo();
+            System.Diagnostics.Debug.WriteLine($"SelectedPersonDpo = {SelectedPersonDpo}");
         }
 
         public ObservableCollection<Person> LoadPerson()
@@ -145,7 +146,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
                 }
                 SaveChanges(ListPerson);
             }
-        }, _ => SelectedPersonDpo != null);
+        }, _ => SelectedPersonDpo != null && ListPersonDPO.Count > 0);
         #endregion
 
         #region DeletePerson
@@ -167,7 +168,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
                 }
                 SaveChanges(ListPerson);
             }
-        }, _ => SelectedPersonDpo != null);
+        }, _ => SelectedPersonDpo != null && ListPersonDPO.Count > 0);
         #endregion
 
         private void SaveChanges(ObservableCollection<Person> listPersons)
