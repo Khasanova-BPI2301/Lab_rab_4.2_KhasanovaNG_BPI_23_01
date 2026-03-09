@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Text.Json;
 using Lab_rab_4._2_KhasanovaNG_BPI_23_01.Helper;
 using Lab_rab_4._2_KhasanovaNG_BPI_23_01.Model;
 using Lab_rab_4._2_KhasanovaNG_BPI_23_01.View;
@@ -15,6 +18,7 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
 {
     public class RoleViewModel : INotifyPropertyChanged
     {
+        private readonly string _roleDataPath = "DataModels/RoleData.json";
         private Role selectedRole;
         public Role SelectedRole
         {
@@ -103,7 +107,19 @@ namespace Lab_rab_4._2_KhasanovaNG_BPI_23_01.ViewModel
         }
         public event PropertyChangedEventHandler PropertyChanged;
 
-        
+        private void SaveRoles()
+        {
+            try
+            {
+                var json = JsonSerializer.Serialize(ListRole.ToList(), new JsonSerializerOptions { WriteIndented = true });
+                Directory.CreateDirectory(Path.GetDirectoryName(_roleDataPath)!);
+                File.WriteAllText(_roleDataPath, json);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка сохранения должностей: {ex.Message}");
+            }
+        }
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
