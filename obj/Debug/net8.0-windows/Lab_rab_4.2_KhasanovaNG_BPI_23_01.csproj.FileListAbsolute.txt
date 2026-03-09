@@ -27,3 +27,6 @@ C:\Users\Нургиза\source\repos\Lab_rab_4.2_KhasanovaNG_BPI_23_01\Lab_rab_4
 C:\Users\Нургиза\source\repos\Lab_rab_4.2_KhasanovaNG_BPI_23_01\Lab_rab_4.2_KhasanovaNG_BPI_23_01\obj\Debug\net8.0-windows\Lab_rab_4.2_KhasanovaNG_BPI_23_01.pdb
 C:\Users\Нургиза\source\repos\Lab_rab_4.2_KhasanovaNG_BPI_23_01\Lab_rab_4.2_KhasanovaNG_BPI_23_01\obj\Debug\net8.0-windows\Lab_rab_4.2_KhasanovaNG_BPI_23_01.genruntimeconfig.cache
 C:\Users\Нургиза\source\repos\Lab_rab_4.2_KhasanovaNG_BPI_23_01\Lab_rab_4.2_KhasanovaNG_BPI_23_01\obj\Debug\net8.0-windows\ref\Lab_rab_4.2_KhasanovaNG_BPI_23_01.dll
+C:\Users\Нургиза\source\repos\Lab_rab_4.2_KhasanovaNG_BPI_23_01\Lab_rab_4.2_KhasanovaNG_BPI_23_01\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Нургиза\source\repos\Lab_rab_4.2_KhasanovaNG_BPI_23_01\Lab_rab_4.2_KhasanovaNG_BPI_23_01\obj\Debug\net8.0-windows\Lab_rab_4.2_KhasanovaNG_BPI_23_01.csproj.AssemblyReference.cache
+C:\Users\Нургиза\source\repos\Lab_rab_4.2_KhasanovaNG_BPI_23_01\Lab_rab_4.2_KhasanovaNG_BPI_23_01\obj\Debug\net8.0-windows\Lab_rab_.C2119184.Up2Date

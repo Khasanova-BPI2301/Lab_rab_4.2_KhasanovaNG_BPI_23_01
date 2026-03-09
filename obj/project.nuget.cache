@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "10N/NjPvlYI=",
+  "dgSpecHash": "mJU1r8legyc=",
   "success": true,
   "projectFilePath": "C:\\Users\\Нургиза\\source\\repos\\Lab_rab_4.2_KhasanovaNG_BPI_23_01\\Lab_rab_4.2_KhasanovaNG_BPI_23_01\\Lab_rab_4.2_KhasanovaNG_BPI_23_01.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Нургиза\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
   "logs": []
 }
