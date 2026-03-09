@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab_rab_4.2_KhasanovaNG_BPI_23_01")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6b9c60945b0fa823fc1fde40f5c0b360b08c870")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab_rab_4.2_KhasanovaNG_BPI_23_01")]
